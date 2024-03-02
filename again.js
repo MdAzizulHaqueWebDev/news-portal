@@ -75,8 +75,8 @@ data.forEach(item => {
     modalContainer.innerHTML =`
     <div class="modal-box w-11/12 max-w-5xl">
     <h2 class="font-bold text-4xl">${item.title} </h2>
-    <h3 class="font-bold text-lg">  Published: ${item.details}</h3>
-    <p class="py-4">${item.author.
+    <h3 class="font-bold text-lg">  ${item.details}</h3>
+    <p class="py-4"> Published: ${item.author.
         published_date
         }</p>
     <div class="modal-action">
