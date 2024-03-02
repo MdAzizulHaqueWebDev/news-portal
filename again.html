@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>News portal</title>
+<link rel="icon" href="download.png">
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="container mx-auto">
+
+<header class="mt-6">
+<nav class="flex justify-between"> 
+    <div class="flex items-center text-2xl font-bold"><button class="btn btn-primary">News</button><h2>Portal</h2></div> 
+<div class="flex items-center justify-center gap-5">
+<div> <a href="#">News</a></div>
+<div><a href="#">Blog</a></div>
+<div class="rounded-full "><img src="images.png" width="50" height="30"></div> <br>
+</div>
+</nav> <br>
+<hr class="h-1 bg-green-400 w-full">
+<div id="navbar-btn-container" class="space-x-5 flex justify-center mt-4">
+
+</div>
+</header>
+<main>
+    <section class="mt-2 text-center">
+        <input id="input-text" type="text" placeholder="Type here" class="input input-bordered input-primary w-full max-w-xs" />
+        <button onclick="searchBtn()" class="btn btn-outline btn-primary">Search</button>
+        <button onclick="shortByBtn()" class="btn btn-outline btn-primary">Short By Date</button>
+    </section>
+<section class="text-center mt-4" id="loader">
+    <span class="loading loading-bars bg-red-500  loading-lg"></span>
+</section>
+
+    <section id="show-all-news" class="mt-5 grid grid-cols-1 gap-6 " >
+
+    </section>
+
+    <section>
+        <!-- You can open the modal using ID.showModal() method -->
+<dialog id="my_modal_4" class="modal">
+
+</dialog>
+    </section>
+</main>
+
+<script src="again.js"></script>
+</body>
+</html>
